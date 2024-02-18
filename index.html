@@ -233,7 +233,7 @@
                 </p>
                 <p class="font-semibold text-xl text-black">9:00 PM</p>
               </div>
-              <div class="flex justify-evenly mt-5">
+              <div class="flex gap-7 mt-5">
                 <p class="p-5 bg-[#0307120D] inter font-medium rounded-lg">
                   Boarding Point - Laxmipur
                 </p>
@@ -255,6 +255,144 @@
             <p class="raleway text-2xl font-semibold text-[#03071299]">
               Per Seat
             </p>
+          </div>
+        </div>
+        <!-- select seat section -->
+        <div class="flex md:w-4/5 mx-auto mt-6 bg-white rounded-lg">
+          <!-- left side -->
+          <div
+            class="w-[60%] border-r border-dashed p-6 pb-0 my-6 border-[#03071233]"
+          >
+            <h3
+              class="raleway font-semibold text-2xl text-black pb-4 border-b border-[#03071233] border-dashed"
+            >
+              Select Your Seat
+            </h3>
+            <div
+              class="flex justify-between pb-4 border-b text-[#03071233] border-dashed pt-2"
+            >
+              <div class="flex items-center gap-2">
+                <img src="./images/seat-gray.png" alt="" />
+                <p class="inter font-medium text-black">Available</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./images/seat-green-filled.png" alt="" />
+                <p class="inter font-medium text-[#1DD100]">Selected</p>
+              </div>
+            </div>
+
+            <!-- seats -->
+            <div class="flex mt-3 justify-end">
+              <img
+                src="./images/Vector.png"
+                alt=""
+                class="px-10 py-3 bg-[#0307121A] rounded-lg"
+              />
+            </div>
+
+            <div class="flex mt-3 justify-between">
+              <!-- A seats -->
+              <div class="flex gap-10 items-center justify-center">
+                <span>A</span>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">A1</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">A2</p>
+              </div>
+              <div class="flex gap-10 items-center">
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">A3</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">A4</p>
+              </div>
+            </div>
+            <div class="flex mt-3 justify-between">
+              <!-- B seats -->
+              <div class="flex gap-10 items-center justify-center">
+                <span>B</span>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">B1</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">B2</p>
+              </div>
+              <div class="flex gap-10 items-center">
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">B3</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">B4</p>
+              </div>
+            </div>
+            <div class="flex mt-3 justify-between">
+              <!-- C seats -->
+              <div class="flex gap-10 items-center justify-center">
+                <span>C</span>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">C1</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">C2</p>
+              </div>
+              <div class="flex gap-10 items-center">
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">C3</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">C4</p>
+              </div>
+            </div>
+            <div class="flex mt-3 justify-between">
+              <!-- D seats -->
+              <div class="flex gap-10 items-center justify-center">
+                <span>D</span>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">D1</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">D2</p>
+              </div>
+              <div class="flex gap-10 items-center">
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">D3</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">D4</p>
+              </div>
+            </div>
+          </div>
+          <!-- right side -->
+          <div class="w-[40%] p-6 my-6">
+            <h3
+              class="raleway font-semibold text-2xl text-black pb-4 border-b border-[#03071233] border-dashed"
+            >
+              Select Your Seat
+            </h3>
+            <!-- payment info -->
+            <div class="p-5 mt-4 bg-[#F7F8F8] rounded-lg">
+              <div
+                class="flex justify-between pb-4 border-b border-[#03071233] border-dashed"
+              >
+                <p class="inter font-medium">
+                  Seat
+                  <span
+                    class="text-white bg-[#1DD100] text-sm px-2 rounded-lg relative bottom-1"
+                    >1</span
+                  >
+                </p>
+                <p class="inter font-medium">Class</p>
+                <p class="inter font-medium">Price</p>
+              </div>
+              <div class="flex justify-between my-3">
+                <p>C2</p>
+                <p>Economoy</p>
+                <p>550</p>
+              </div>
+              <div class="flex justify-between my-3">
+                <p>C2</p>
+                <p>Economoy</p>
+                <p>550</p>
+              </div>
+              <hr class="text-gray-400" />
+              <div class="flex justify-between py-3">
+                <p class="inter font-medium">Total Price</p>
+                <p class="inter font-medium">BDT <span>1100</span></p>
+              </div>
+              <div class="relative">
+                <input
+                  type="text"
+                  class="w-full p-4 rounded-lg"
+                  placeholder="Have any copupon?"
+                />
+                <button
+                  class="absolute px-5 py-2 rounded-lg right-4 top-2 inter font-semibold text-white bg-[#1DD100]"
+                >
+                  Apply
+                </button>
+              </div>
+              <div class="flex justify-between mt-3">
+                <p class="inter font-medium">Grand Total</p>
+                <p class="inter font-medium">BDT <span>1100</span></p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
