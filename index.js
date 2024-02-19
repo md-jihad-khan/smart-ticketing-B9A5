@@ -28,8 +28,9 @@ for (let i = 0; i < seats.length; i++) {
       document.getElementById("total-Price").innerText = totalPrice;
       document.getElementById("Grand-Total").innerText = grandTotal;
 
-      const paymentContainer = document.getElementById("payment-info");
+      const paymentContainer = document.getElementById("payment-details");
       const div = document.createElement("div");
+      div.classList.add("inner");
       const seatNumber = document.createElement("p");
       seatNumber.innerText = title;
       const clas = document.createElement("p");
@@ -90,4 +91,29 @@ inputField.addEventListener("input", function () {
   if (selectedSeat > 0 && !isNaN(inputField.value)) {
     nextButton.removeAttribute("disabled");
   }
+});
+
+nextButton.addEventListener("click", function () {
+  selectedSeat = 0;
+  seatleft = 40;
+  totalPrice = 0;
+  grandTotal = 0;
+
+  const seatElements = document.querySelectorAll(".seats");
+  seatElements.forEach(function (seat) {
+    seat.classList.remove("selected");
+    seat.classList.add("bg-[#F7F8F8]");
+  });
+
+  document.getElementById("selected-seat").innerText = selectedSeat;
+  document.getElementById("Seats-left").innerText = seatleft;
+  document.getElementById("total-Price").innerText = totalPrice;
+  document.getElementById("Grand-Total").innerText = grandTotal;
+  document.getElementById("input-field").value = "";
+  document.getElementById("input-number").value = "";
+  document.getElementById("input-name").value = "";
+  document.getElementById("input-email").value = "";
+
+  const paymentContainer = document.getElementById("payment-details");
+  paymentContainer.innerHTML = "";
 });
