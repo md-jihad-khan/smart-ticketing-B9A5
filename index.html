@@ -1,4 +1,4 @@
-=<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
@@ -20,6 +20,12 @@
       .inter {
         font-family: "Inter", sans-serif;
       }
+      .payment {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
     </style>
     <title>Bus Ticket</title>
   </head>
@@ -31,7 +37,11 @@
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost lg:hidden flex"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -57,7 +67,7 @@
                 <li><a>Search</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-4xl font-extrabold">P-Ticket</a>
+            <a class="text-4xl font-extrabold">P-Ticket</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul
@@ -96,11 +106,12 @@
                 the app. The <br />
                 integrated testing features allow for a streamlined .
               </p>
-              <button
+              <a
+                href="#ph"
                 class="btn bg-[#1DD100] border-none text-xl font-bold raleway"
               >
                 Buy Tickets
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -187,7 +198,10 @@
         </div>
       </section>
       <!-- P.H Paribahan section -->
-      <section class="bg-[#F7F8F8] border-t-2 border-t-[#1DD100] rounded-xl">
+      <section
+        class="bg-[#F7F8F8] border-t-2 border-t-[#1DD100] rounded-xl"
+        id="ph"
+      >
         <div class="text-center md:w-4/5 mx-auto space-y-4 mb-10">
           <h2 class="raleway pt-20 text-5xl font-bold">P.H Paribahan</h2>
           <p class="inter font-normal text-[#03071299]">
@@ -214,7 +228,8 @@
               <button
                 class="bg-[#1DD1001A] text-[#1DD100] text-xl font-bold p-5 flex rounded-lg items-center inter gap-3"
               >
-                <img src="./images/seat-green.png" alt="" /> 40 Seats left
+                <img src="./images/seat-green.png" alt="" />
+                <span id="Seats-left">8</span> Seats left
               </button>
             </div>
 
@@ -294,48 +309,80 @@
               <!-- A seats -->
               <div class="flex gap-10 items-center justify-center">
                 <span>A</span>
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">A1</p>
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">A2</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="A1">
+                  A1
+                </p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="A2">
+                  A2
+                </p>
               </div>
               <div class="flex gap-10 items-center">
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">A3</p>
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">A4</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="A3">
+                  A3
+                </p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="A4">
+                  A4
+                </p>
               </div>
             </div>
             <div class="flex mt-3 justify-between">
               <!-- B seats -->
               <div class="flex gap-10 items-center justify-center">
                 <span>B</span>
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">B1</p>
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">B2</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="B1">
+                  B1
+                </p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="B2">
+                  B2
+                </p>
               </div>
               <div class="flex gap-10 items-center">
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">B3</p>
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">B4</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="B3">
+                  B3
+                </p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="B4">
+                  B4
+                </p>
               </div>
             </div>
             <div class="flex mt-3 justify-between">
               <!-- C seats -->
               <div class="flex gap-10 items-center justify-center">
                 <span>C</span>
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">C1</p>
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">C2</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="C1">
+                  C1
+                </p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="C2">
+                  C2
+                </p>
               </div>
               <div class="flex gap-10 items-center">
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">C3</p>
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">C4</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="C3">
+                  C3
+                </p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="C4">
+                  C4
+                </p>
               </div>
             </div>
             <div class="flex mt-3 justify-between">
               <!-- D seats -->
               <div class="flex gap-10 items-center justify-center">
                 <span>D</span>
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">D1</p>
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">D2</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="D1">
+                  D1
+                </p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="D2">
+                  D2
+                </p>
               </div>
               <div class="flex gap-10 items-center">
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">D3</p>
-                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg">D4</p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="D3">
+                  D3
+                </p>
+                <p class="px-10 py-3 bg-[#F7F8F8] rounded-lg seats" id="D4">
+                  D4
+                </p>
               </div>
             </div>
           </div>
@@ -348,56 +395,150 @@
             </h3>
             <!-- payment info -->
             <div class="p-5 mt-4 bg-[#F7F8F8] rounded-lg">
-              <div
-                class="flex justify-between pb-4 border-b border-[#03071233] border-dashed"
-              >
-                <p class="inter font-medium">
-                  Seat
-                  <span
-                    class="text-white bg-[#1DD100] text-sm px-2 rounded-lg relative bottom-1"
-                    >1</span
-                  >
-                </p>
-                <p class="inter font-medium">Class</p>
-                <p class="inter font-medium">Price</p>
-              </div>
-              <div class="flex justify-between my-3">
-                <p>C2</p>
-                <p>Economoy</p>
-                <p>550</p>
-              </div>
-              <div class="flex justify-between my-3">
-                <p>C2</p>
-                <p>Economoy</p>
-                <p>550</p>
+              <div id="payment-info">
+                <div
+                  class="flex justify-between pb-4 border-b border-[#03071233] border-dashed"
+                >
+                  <p class="inter font-medium">
+                    Seat
+                    <span
+                      class="text-white bg-[#1DD100] text-sm px-2 rounded-lg relative bottom-1"
+                      id="selected-seat"
+                      >0</span
+                    >
+                  </p>
+                  <p class="inter font-medium">Class</p>
+                  <p class="inter font-medium">Price</p>
+                </div>
               </div>
               <hr class="text-gray-400" />
               <div class="flex justify-between py-3">
                 <p class="inter font-medium">Total Price</p>
-                <p class="inter font-medium">BDT <span>1100</span></p>
+                <p class="inter font-medium">
+                  BDT <span id="total-Price">0</span>
+                </p>
               </div>
-              <div class="relative">
+              <div id="Discounted-div" class="flex justify-between py-3 hidden">
+                <p class="inter font-medium">Discounted Price</p>
+                <p class="inter font-medium">
+                  BDT <span id="discounted-price">0</span>
+                </p>
+              </div>
+              <div id="inputdiv" class="relative">
                 <input
+                  disabled
+                  id="input-field"
                   type="text"
                   class="w-full p-4 rounded-lg"
                   placeholder="Have any copupon?"
                 />
                 <button
-                  class="absolute px-5 py-2 rounded-lg right-4 top-2 inter font-semibold text-white bg-[#1DD100]"
+                  id="apply-btn"
+                  class="btn absolute px-5 py-2 rounded-lg right-4 top-2 inter font-semibold text-white bg-[#1DD100]"
+                  disabled
                 >
                   Apply
                 </button>
               </div>
               <div class="flex justify-between mt-3">
                 <p class="inter font-medium">Grand Total</p>
-                <p class="inter font-medium">BDT <span>1100</span></p>
+                <p class="inter font-medium">
+                  BDT <span id="Grand-Total">0</span>
+                </p>
               </div>
             </div>
+
+            <!-- name -->
+            <label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="label-text inter font-semibold"
+                  >Passenger Name*</span
+                >
+              </div>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="input input-bordered w-full max-w-xs"
+              />
+            </label>
+            <!-- number -->
+            <label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="label-text inter font-semibold"
+                  >Phone Number*</span
+                >
+              </div>
+              <input
+                id="input-number"
+                type="number"
+                placeholder="Enter your phone number"
+                class="input input-bordered w-full max-w-xs"
+              />
+            </label>
+            <!-- email -->
+            <label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="label-text inter font-semibold">Email ID</span>
+              </div>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="input input-bordered w-full max-w-xs"
+              />
+            </label>
+            <label class="form-control w-full max-w-xs mt-5">
+              <button
+                id="nextbtn"
+                class="btn bg-[#1DD100] border-none text-white text-xl font-bold raleway"
+                disabled
+                onclick="my_modal_1.showModal()"
+              >
+                Next
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box justify-center text-center">
+                  <div class="flex flex-col items-center">
+                    <img src="./images/success.png" alt="" class="" />
+                    <h3 class="font-bold text-lg uppercase text-green-600">
+                      success
+                    </h3>
+                    <p class="py-4 font-semibold text-center">
+                      Thank you for Booking Our Bus Seats. <br />
+                      We are working hard to find the best service and deals for
+                      you.
+                      <br />
+                      <span class="text-gray-400 font-thin">
+                        Shortly you will find a confirmation in your
+                        email.</span
+                      >
+                    </p>
+                    <div class="modal-action">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn bg-green-600 text-white">
+                          Close
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </dialog>
+
+              <div class="label">
+                <span class="label-text-alt underline"
+                  >Terms and Conditions</span
+                >
+                <span class="label-text-alt underline"
+                  >Cancellation Policy</span
+                >
+              </div>
+            </label>
           </div>
         </div>
       </section>
     </main>
     <!-- footer -->
     <footer></footer>
+    <script src="index.js"></script>
   </body>
 </html>
