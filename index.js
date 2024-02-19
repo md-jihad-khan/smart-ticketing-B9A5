@@ -1,5 +1,5 @@
 let selectedSeat = 0;
-let seatleft = 8;
+let seatleft = 40;
 const ticketprice = 550;
 let totalPrice = 0;
 let grandTotal = 0;
